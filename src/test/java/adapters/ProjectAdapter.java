@@ -12,10 +12,7 @@ public class ProjectAdapter extends BaseAdapter {
         return post(ENDPOINT, statusCode, requestBody);
     }
 
-    //    public PositiveResponse<Project> createProject(int statusCode, String requestBody) {
-//        return gson.fromJson(post(ENDPOINT, statusCode, requestBody), new TypeToken<PositiveResponse<Project>>() {
-//        }.getType());
-//    }
+
     public String getProjectByCode(int statusCode, String projectCode) {
         return get(ENDPOINT + "/" + projectCode, statusCode);
     }
