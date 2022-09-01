@@ -5,8 +5,8 @@ import lombok.Data;
 
 @Data
 @Builder
-public class ProjectResponse {
+public class PositiveResponse<T> {
     @Builder.Default
-    boolean status = true;
-    Result result;
+    private boolean status = true;
+    private T result;
 }
